@@ -6,6 +6,9 @@ using System.Web.Mvc;
 
 namespace BakeryMVC.Controllers
 {
+    /// <summary>
+    /// I only changed the ViewBag messages in this controller
+    /// </summary>
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -15,14 +18,14 @@ namespace BakeryMVC.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Aways Fresh since 1990";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Email us at bakery@gmail.com.";
 
             return View();
         }
